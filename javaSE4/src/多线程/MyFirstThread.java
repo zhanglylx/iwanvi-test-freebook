@@ -1,0 +1,11 @@
+package 多线程;
+/**
+ * 线程
+ * @author Administrator
+ *
+ */
+public class MyFirstThread extends Thread{
+	public void run(){
+		
+	}
+}
