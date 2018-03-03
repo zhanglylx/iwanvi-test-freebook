@@ -1,0 +1,9 @@
+package 多线程;
+/**
+ * 定义线程体(线程要执行的任务逻辑)
+ * @author Administrator
+ *
+ */
+public class MyFirstRunnable {
+
+}

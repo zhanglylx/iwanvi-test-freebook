@@ -1,0 +1,11 @@
+package 多线程;
+
+public class TestThread {
+
+	public static void main(String[] args) {
+		/**
+		 * 测试并发操作多个任务
+		 */
+	}
+
+}

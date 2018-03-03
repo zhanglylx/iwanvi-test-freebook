@@ -1,0 +1,16 @@
+package 多线程;
+
+public class TestThread {
+
+	public static void main(String[] args) {
+		/**
+		 * 测试并发操作多个任务
+		 */
+		Thread t1 = new MyFirstThread();
+		Thread t2 = new MySecThread();
+		/**
+		 * 启动线程开始并发执行任务
+		 */
+	}
+
+}
