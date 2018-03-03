@@ -24,9 +24,6 @@ public class DownloadInfo implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String url;// 下载文件的地址
-	/*
-	 * transient 关键字用于表示属性在对象序列化时被忽略
-	 */
 	private transient long  pos; // 已经下载的字节数
 	private long fileSize; // 文件总大小
 	private String fileName; // 保存在本地的文件名

@@ -9646,3 +9646,58 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2018-03-03 19:52:40.411
 !MESSAGE Setup tasks were performed during startup updating 1297 preferences. See 'D:\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-03-03 20:52:38.309
+!MESSAGE No repository found at http://download.eclipse.org/technology/babel/update-site/R0.14.1/neon.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2018-03-03 20:54:13.645
+!MESSAGE Unable to connect to repository http://pydev.org/updates/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.python.pydev.shared_core 4 4 2018-03-03 21:03:26.567
+!MESSAGE No message gotten (null message).
+!STACK 0
+java.lang.NullPointerException
+	at org.python.pydev.debug.ui.launching.PythonRunnerConfig.getWorkingDirectory(PythonRunnerConfig.java:223)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.initLaunchConfiguration(PythonConsoleLineTracker.java:158)
+	at org.python.pydev.debug.ui.PythonConsoleLineTracker.init(PythonConsoleLineTracker.java:129)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.connect(ConsoleLineNotifier.java:56)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher.addPatternMatchListener(ConsolePatternMatcher.java:234)
+	at org.eclipse.ui.console.TextConsole.addPatternMatchListener(TextConsole.java:409)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole.<init>(ProcessConsole.java:228)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsoleManager.launchChanged(ProcessConsoleManager.java:149)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:453)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:433)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1043)
+	at org.eclipse.debug.core.Launch.fireChanged(Launch.java:393)
+	at org.eclipse.debug.core.Launch.addProcess(Launch.java:355)
+	at org.eclipse.debug.core.model.RuntimeProcess.<init>(RuntimeProcess.java:126)
+	at org.eclipse.debug.core.DebugPlugin.newProcess(DebugPlugin.java:787)
+	at org.eclipse.jdt.launching.AbstractVMRunner.newProcess(AbstractVMRunner.java:170)
+	at org.eclipse.jdt.internal.launching.StandardVMRunner.run(StandardVMRunner.java:424)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:102)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
