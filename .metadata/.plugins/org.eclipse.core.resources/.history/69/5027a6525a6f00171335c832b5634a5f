@@ -1,0 +1,8 @@
+package jir;
+
+public class tihuanhuiche {
+	public tihuanhuiche(String str){
+	if(str.indexOf("\n")<=0){
+	}
+	};
+}

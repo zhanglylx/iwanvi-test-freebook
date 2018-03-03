@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="94" key="DIALOG_X_ORIGIN"/>
+		<item value="246" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="adb" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="adb()"/>
+			<item value="adb"/>
+			<item value="pullMonkeyLog"/>
+			<item value="findApk"/>
+			<item value="n"/>
+			<item value="sleep"/>
+			<item value="CheckFileExists"/>
+			<item value="is"/>
+		</list>
+		<list key="replacehistory">
+			<item value="错误"/>
+			<item value="data"/>
+			<item value="Data"/>
+			<item value="【检查不通过】"/>
+			<item value="ExcelPath"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="300" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="410" key="DIALOG_HEIGHT"/>
+		<item value="832" key="DIALOG_X_ORIGIN"/>
+		<item value="304" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,19 @@
+1516008545743	Rename package 'appium方法'
+1516008557412	Rename package 'appiumMethod'
+1516066643383	Rename type 'getAdbPuth'
+1516079976189	Rename type 'log'
+1516091973864	Rename type 'installAPPPackge'
+1516095748794	Rename type 'TestDevices'
+1516243808669	Copy compilation unit
+1516243823741	Copy compilation unit
+1516243847995	Delete element
+1516244682661	Rename field 'appPackage'
+1516244716384	Rename field 'appActivity'
+1516244765353	Rename field 'ScreenshotsReplace'
+1516244776638	Rename field 'APPNAME'
+1516244820823	Rename field 'COVERPACKAGEPHONE'
+1516244861997	Rename field 'APP_NAME'
+1516245299250	Delete element
+1516261986962	Rename type 'GETLocalityFilePuth'
+1516277227437	Delete element
+1516329072217	Rename method 'txt2String'

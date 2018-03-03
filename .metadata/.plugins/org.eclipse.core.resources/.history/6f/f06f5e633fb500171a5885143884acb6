@@ -1,0 +1,20 @@
+package String;
+
+public class TestString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/**
+		 * 字符串对象是不可变的！
+		 * 对字符串的任何操作，都会重新创建对象,而不是影响以前对象
+		 */
+		String s1 = "Hello";
+		String s2 = new String("Hello");
+		/**
+		 * 在比较字符串的时候我们通常的做饭是使用equals方法
+		 * 字符串重写了Object的equals方法。用于比较字符串内容是否一致
+		 */
+		System.out.println();
+	}
+
+}

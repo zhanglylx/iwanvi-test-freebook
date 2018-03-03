@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="E:\LoadRunner" version="1.5.0_06">
+<bootpath>
+<entry path="E:\LoadRunner\jre\lib\rt.jar"/>
+<entry path="E:\LoadRunner\jre\lib\i18n.jar"/>
+<entry path="E:\LoadRunner\jre\lib\sunrsasign.jar"/>
+<entry path="E:\LoadRunner\jre\lib\jsse.jar"/>
+<entry path="E:\LoadRunner\jre\lib\jce.jar"/>
+<entry path="E:\LoadRunner\jre\lib\charsets.jar"/>
+<entry path="E:\LoadRunner\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\LoadRunner\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\LoadRunner\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\APPSCAN\java" version="1.7.0">
+<bootpath>
+<entry path="E:\APPSCAN\java\jre\bin\default\jclSC170\vm.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\se-service.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\math.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\jlm.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmorb.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmorbapi.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmcfw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmpkcs.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmcertpathfw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmjgssfw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmjssefw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmsaslfw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmjcefw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\xmldsigfw.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\xml.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\charsets.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\resources.jar"/>
+<entry path="E:\APPSCAN\java\jre\lib\rt.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\APPSCAN\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\APPSCAN\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\Oracle\jdk6" version="1.6.0_24">
+<bootpath>
+<entry path="E:\Oracle\jdk6\jre\lib\resources.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\rt.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\sunrsasign.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\jsse.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\jce.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\charsets.jar"/>
+<entry path="E:\Oracle\jdk6\jre\lib\modules\jdk.boot.jar"/>
+<entry path="E:\Oracle\jdk6\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\Oracle\jdk6\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\Oracle\jdk6\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\java\jre" version="1.8.0_66">
+<bootpath>
+<entry path="D:\java\jre\lib\resources.jar"/>
+<entry path="D:\java\jre\lib\rt.jar"/>
+<entry path="D:\java\jre\lib\sunrsasign.jar"/>
+<entry path="D:\java\jre\lib\jsse.jar"/>
+<entry path="D:\java\jre\lib\jce.jar"/>
+<entry path="D:\java\jre\lib\charsets.jar"/>
+<entry path="D:\java\jre\lib\jfr.jar"/>
+<entry path="D:\java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\java\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\Oracle\jdk" version="1.5.0_30">
+<bootpath>
+<entry path="E:\Oracle\jdk\jre\lib\rt.jar"/>
+<entry path="E:\Oracle\jdk\jre\lib\i18n.jar"/>
+<entry path="E:\Oracle\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="E:\Oracle\jdk\jre\lib\jsse.jar"/>
+<entry path="E:\Oracle\jdk\jre\lib\jce.jar"/>
+<entry path="E:\Oracle\jdk\jre\lib\charsets.jar"/>
+<entry path="E:\Oracle\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\Oracle\jdk\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\Oracle\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\java\jdk" version="1.8.0_66">
+<bootpath>
+<entry path="D:\java\jdk\jre\lib\resources.jar"/>
+<entry path="D:\java\jdk\jre\lib\rt.jar"/>
+<entry path="D:\java\jdk\jre\lib\sunrsasign.jar"/>
+<entry path="D:\java\jdk\jre\lib\jsse.jar"/>
+<entry path="D:\java\jdk\jre\lib\jce.jar"/>
+<entry path="D:\java\jdk\jre\lib\charsets.jar"/>
+<entry path="D:\java\jdk\jre\lib\jfr.jar"/>
+<entry path="D:\java\jdk\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\java\jdk\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\java\jdk\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

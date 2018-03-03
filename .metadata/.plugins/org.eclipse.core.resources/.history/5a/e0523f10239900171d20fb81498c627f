@@ -1,0 +1,21 @@
+package 共享办公;
+
+public class check {
+	boolean[] check = new boolean[20];
+	boolean[] runCheck = new boolean[20];
+	public check(int num,boolean check){
+		this.check[num] = check;
+	}
+	public void consequence(){
+		int c=0;
+		for(int i=0;i<check.length;i++){
+			if(check[i]==true){
+				c+=1;
+				System.out.println("get:"+i+" 为true");
+			}
+		}
+		if(c!=1){
+			System.out.println("检查不通过");
+		}
+	}
+}

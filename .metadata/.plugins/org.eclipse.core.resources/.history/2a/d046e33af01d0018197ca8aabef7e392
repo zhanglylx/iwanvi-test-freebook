@@ -1,0 +1,28 @@
+package 序列化对象;
+/**
+ * 序列化对象
+ * @author Administrator
+ *
+ */
+public class SerializeObject {
+
+	public static void main(String[] args) {
+		try{
+			DownloadInfo info =
+					new DownloadInfo(
+							"http://www.baidu.com/download/xxx.zip"
+							,
+							"xxx.zip"
+							);
+			info.setPos(12587);
+			info.setFileSize(5566987);
+			/**
+			 * 将info对象序列化后写到文件中
+			 */
+		}catch (Exception e){
+			e.printStackTrace();
+			System.out.println("非常sorry");
+		}
+	}
+
+}

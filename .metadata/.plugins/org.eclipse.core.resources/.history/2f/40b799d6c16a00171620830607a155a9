@@ -1,0 +1,7 @@
+package 万达;
+
+public class Ary {
+	public Ary(String[] list){
+		
+	}
+}

@@ -1,0 +1,31 @@
+package File文件类;
+
+import java.io.File;
+
+/**
+ * File类
+ * @author Administrator
+ *
+ */
+public class DemoFile {
+
+	public static void main(String[] args) {
+		/**
+		 * 实例化一个文件，代表给定路径的文件或目录
+		 * 
+		 * 路径的描述不同的文件系统差异较大
+		 * linux和windows就不同！
+		 * 
+		 * 最好使用相对路径，不要用绝对路径。
+		 * 
+		 * 
+		 */
+		/**
+		 * "."代表的路径
+		 * eclipse_workspace/project_name/
+		 */
+		File file = new File("");
+
+	}
+
+}

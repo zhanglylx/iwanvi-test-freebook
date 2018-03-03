@@ -1,0 +1,26 @@
+package 概括;
+/**
+ *     数组
+ * 什么是数组：类型一致的一组数据，相当于集合概念
+ * 			在软件中解决一组，一堆 XXX 数据时使用数组。
+ * 数组变量：是引用变量(不是基本类型变量)
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @author Administrator
+ *
+ */
+public class 数组_方法_API部分常用方法概括 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

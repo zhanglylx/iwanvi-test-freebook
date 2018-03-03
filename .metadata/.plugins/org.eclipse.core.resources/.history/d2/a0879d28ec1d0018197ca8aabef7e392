@@ -1,0 +1,5 @@
+package 序列化对象;
+
+public class DownloadInfo {
+
+}

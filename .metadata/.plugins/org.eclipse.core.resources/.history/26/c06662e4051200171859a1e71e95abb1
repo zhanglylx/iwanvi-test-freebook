@@ -1,0 +1,10 @@
+package 继承;
+
+public class Shape_Circle在同一个包中 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Circle_extends_Shape c = new Circle_extends_Shape(3,4,5);
+	}
+
+}

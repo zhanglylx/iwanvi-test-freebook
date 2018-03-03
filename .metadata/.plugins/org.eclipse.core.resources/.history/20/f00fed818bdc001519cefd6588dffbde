@@ -1,0 +1,12 @@
+package Study;
+import java.lang.Math;
+import java.util.Scanner;
+public class xuexi1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package jir;
+
+public class tihuanhuiche {
+	public static void main(String[] args){
+		String a="da\ncd";
+		a = a.replace("da", "cd")
+		System.out.println(a);
+	}
+	public static String tihuanhuiche(String str){
+		if(str.indexOf("\n")>=0){
+		 StringBuilder sb = new StringBuilder(str);
+		System.out.println("========");
+		 str.replace("d","fsda");
+	}
+	return str;
+	
+	}
+}

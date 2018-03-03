@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/黑马/src/String/将字符串转换成字符数组_不能使用tocharArray方法.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="String.将字符串转换成字符数组_不能使用tocharArray方法"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="黑马"/>
+</launchConfiguration>

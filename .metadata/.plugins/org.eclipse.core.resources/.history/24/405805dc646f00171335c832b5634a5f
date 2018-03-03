@@ -1,0 +1,20 @@
+package jir;
+
+public class tihuanhuiche {
+	public static void main(String[] args){
+		String a="a\\\nf";
+		a = a.replaceAll("\n", "4");
+		System.out.println(a);
+		System.out.println(tihuanhuiche(a));
+	}
+	public static String tihuanhuiche(String str){
+		
+		if(str.indexOf("\n")>=0){
+		 StringBuilder sb = new StringBuilder(str);
+		System.out.println("========");
+		 str=(sb.replace(2,3,"2")).toString();
+	}
+	return str;
+	
+	}
+}

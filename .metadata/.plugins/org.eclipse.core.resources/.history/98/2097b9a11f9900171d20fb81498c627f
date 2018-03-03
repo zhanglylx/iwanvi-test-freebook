@@ -1,0 +1,5 @@
+package 共享办公;
+
+public class check {
+	boolean check = new boolean[20];
+}

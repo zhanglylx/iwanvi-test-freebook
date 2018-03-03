@@ -1,0 +1,23 @@
+package jir;
+
+import org.apache.commons.collections.bag.SynchronizedSortedBag;
+
+public class RequestContent {
+	 String request ;
+	public RequestContent() {
+		// TODO 自动生成的方法存根
+		JirExcel cel = new JirExcel();
+		
+		for(int i=0;i<cel.Key.length;i++){
+			request = request+
+					cel.Key[i].trim()
+					+"="+
+					Transcoding.getURLEncoderString((cel.Values[i].trim()))//转码
+							+"&";
+			
+		}
+		String a="";
+		a.indexOf("\n")
+		request=request.substring(4, request.length()-1);
+	}
+}

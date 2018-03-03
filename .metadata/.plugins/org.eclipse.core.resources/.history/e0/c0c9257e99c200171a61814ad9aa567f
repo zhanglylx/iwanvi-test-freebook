@@ -1,0 +1,17 @@
+package 包装类;
+/**
+ * int类型的Integer包装类
+ * @author Administrator
+ *
+ */
+public class DemoInteger {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void say(Object obj){
+		System.out.println(obj);
+	}
+
+}

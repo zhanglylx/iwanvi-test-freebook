@@ -1,0 +1,22 @@
+package com.worm;
+import javax.swing.JFrame; //Frame 框架，相框
+import javax.swing.JPanel; //panel 面板
+/**
+ * 显示窗口与绘图
+ * @author Administrator
+ *
+ */
+public class JFrameDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("窗口");
+		JPanel pane = new JPanel();
+		frame.setLayout(null);//取消窗口的默认布局，取消自动充满
+		frame.add(pane); //窗口里添加面板
+		pane.setSize(10*35,10*35);
+		pane.setLocation(50, 50);
+		frame.setSize(450, 480);
+	}
+
+}

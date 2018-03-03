@@ -1,0 +1,15 @@
+package Study;
+import java.util.Random;
+import java.util.Scanner;
+public class xuexi1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Random rand = new Random();
+        int randNum=rand.nextInt(100000000);
+        Integer intNum=new Integer(2);
+	    System.out.println("请输入一个数字");
+	    String stringNum=randNum.toString()
+:	}
+	
+}

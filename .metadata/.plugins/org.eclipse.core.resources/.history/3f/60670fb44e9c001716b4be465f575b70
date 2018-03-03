@@ -1,0 +1,7 @@
+package CoworkingSpaces;
+public class   get13  extends get2{
+	public get13(){}
+	public get13(long time, int timeTask) {
+		super(time, timeTask);
+	}
+}

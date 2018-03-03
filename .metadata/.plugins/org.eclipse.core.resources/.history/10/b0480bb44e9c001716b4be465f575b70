@@ -1,0 +1,7 @@
+package CoworkingSpaces;
+public class   get19  extends get2{
+	public get19(){}
+	public get19(long time, int timeTask) {
+		super(time, timeTask);
+	}
+}

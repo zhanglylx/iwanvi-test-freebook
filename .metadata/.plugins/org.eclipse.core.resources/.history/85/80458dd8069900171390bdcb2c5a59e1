@@ -1,0 +1,33 @@
+package 共享办公;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class DateTime {
+
+	public static void main(String[] args) throws ParseException{
+	   System.out.println(date());
+	   }   	    
+	    
+	
+	public int time(String time) throws ParseException{
+		 SimpleDateFormat format =  new SimpleDateFormat("HHmmss");  
+		    Date date = format.parse(time);  
+		    String timeSs = String.valueOf(date.getTime()); 
+		   if(timeSs.length()>3){
+			   timeSs = timeSs.substring(0, timeSs.length()-3);
+		   }
+		   return Integer.parseInt(timeSs);
+	}
+	
+	public static int  date(){
+		 SimpleDateFormat format =  new SimpleDateFormat("yyyyMMddHHmmss");  
+		 Date dt = new Date();
+		  String date = format.format(dt); 
+		  System.out.println(date);
+		   if(date.length()>3){
+			   date = date.substring(0, date.length()-3);
+		   }
+		   return Integer.parseInt(date);
+	}
+
+}

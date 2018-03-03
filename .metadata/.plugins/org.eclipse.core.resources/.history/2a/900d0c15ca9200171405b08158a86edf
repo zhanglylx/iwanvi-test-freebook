@@ -1,0 +1,10 @@
+package 构造器_重载_方法_空指针;
+
+public class 私有的方法不能继承_不能重写 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

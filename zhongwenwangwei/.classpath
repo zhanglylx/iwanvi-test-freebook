@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="E:/java_study/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/jxl.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/java_study/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

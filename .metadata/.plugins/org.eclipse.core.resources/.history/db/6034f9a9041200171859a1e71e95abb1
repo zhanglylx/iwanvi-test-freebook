@@ -1,0 +1,7 @@
+package 继承;
+/*
+ * 圆继承了图形，表示圆是一个图形
+ */
+public class Circle_extends_Shape extends Shape{
+
+}

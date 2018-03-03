@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Calendar日历类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DateFormat是SimpleDateFormat父类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SimpleDateFormat日期转换类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/包装类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/数据结构" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/新循环" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/泛型" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/浮点类型精度运算" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Collection" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

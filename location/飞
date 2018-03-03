@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+import json
+import time
+import pandas
+import sys
+import matplotlib.pyplot as plt
+
+
+ppp = pandas.read_csv('beacon_base_pos_ready.csv')
+
+for i in range( len(ppp) ):
+	
+	if ppp.iloc[i].floor != int( sys.argv[1] ):
+		continue
+	
+	minor = ppp.iloc[i].minor
+	
+	
+	if len( ppp.iloc[i].new_pos) > 5:
+		pos  = ppp.iloc[i].new_pos
+	else:
+		pos  = ppp.iloc[i].pos
+
+	x = float( pos.split(',')[0] )
+	y = float( pos.split(',')[1] )
+
+	plt.plot(x,y,'b*')
+	
+	plt.annotate(str(minor), xy=(x,y), xytext=(x,y-1),
+            arrowprops=dict(facecolor='black', headwidth=0.001),
+            )
+
+
+plt.axis('equal')
+plt.show()
+	
+	
+	
+	

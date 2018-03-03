@@ -1,0 +1,48 @@
+package 万达;
+import java.util.Arrays;
+
+import 轻客户端.api;
+public class API1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		String url="https://api.ffan.com/ihos/beacon/v1/beaconsByUMM?callId=SYTM&coordinate=mercator&plazaId=1100079&re"
+				+ "qTime=1499909424&signValue=11464b596578906c00edd52d25843a3250300b60";
+		String response;
+		response=api.loadJSON(url);
+		System.out.println(response);
+		Excel cel = new Excel("minor");
+		String[] Excel = cel.Excel;
+		int[] str = new int[0];
+		String [] err = new String[0];
+		int num = 0;
+		for(int i=1;i<Excel.length;i++){//比对Excel信息是否存在接口中
+			if(response.contains(Excel[i])){
+			}else{
+				if(num == 0 ){ //将错误信息添加进数组
+					str[num] = i;	
+					num++;
+				}else{//给str数组扩容
+					str=Arrays.copyOf(str, str.length+1);
+					num++;
+				}
+				
+			}
+		}
+		int[] strErr = new int[str.length];
+		for(int i =0;i<str.length;i++){//统计重复的数据
+			for(int j = 0;j<str.length;j++){
+				if(i==j){continue;}
+				if(str[i]==str[j]){
+					strErr[i]=strErr[i]+1;
+				}
+			}
+		}
+		for(int i = 0;i<str.length;)
+		
+		
+		
+
+	}
+
+}

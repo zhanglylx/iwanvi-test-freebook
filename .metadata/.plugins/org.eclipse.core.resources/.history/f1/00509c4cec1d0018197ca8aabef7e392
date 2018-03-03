@@ -1,0 +1,18 @@
+package 序列化对象;
+/**
+ * 序列化对象
+ * @author Administrator
+ *
+ */
+public class SerializeObject {
+
+	public static void main(String[] args) {
+		try{
+			
+		}catch (Exception e){
+			e.printStackTrace();
+			System.out.println("非常sorry");
+		}
+	}
+
+}

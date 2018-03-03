@@ -1,0 +1,49 @@
+package 共享办公;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+
+public class DateTime {
+	int hour;
+	int minute;
+
+	public DateTime() {
+	}
+
+	public DateTime(int hour, int minute) {
+		this.hour = hour;
+		this.minute = minute;
+	}
+
+	public String[] fromTimeDate() throws ParseException {
+		String[] fromTimeDate = new String[19];
+		for(int i=0;i<fromTimeDate;i++){
+			if (hour < 10) {
+				fromTimeDate[]= date(time() + "0" + hour + "00");
+				
+			} else {
+				fromTimeDate = date(time() + "0" + hour + "00");
+			}
+			hour++;
+		}
+		return TimeDate;
+	}
+	public static String time() throws ParseException {
+		Date dt = new Date();
+		SimpleDateFormat matter1 = new SimpleDateFormat("yyyyMMdd");
+		return matter1.format(dt);
+	}
+
+	public static String date(String string) throws ParseException {
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
+		Date date = format.parse(String.valueOf(string));
+		String timeSs = String.valueOf(date.getTime());
+		if (timeSs.length() > 3) {
+			timeSs = timeSs.substring(0, timeSs.length() - 3);
+		}
+		return timeSs;
+	}
+
+}

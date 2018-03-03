@@ -1,0 +1,10 @@
+package 万达;
+
+import 轻客户端.api;
+
+public class ceshi {
+	String url="https://api.ffan.com/ihos/beacon/v1/beaconsByUMM?callId=SYTM&coordinate=mercator&plazaId=1100079&re"
+			+ "qTime=1499909424&signValue=11464b596578906c00edd52d25843a3250300b60";
+	String response;
+	response=api.loadJSON(url);
+}

@@ -1,0 +1,18 @@
+package 包装类;
+/**
+ * int类型的Integer包装类
+ * @author Administrator
+ *
+ */
+public class DemoInteger {
+
+	public static void main(String[] args) {
+		DemoInteger demo = new DemoInteger();
+		say(demo);//在java1.4版本的时候，这里还是语法错误的！
+
+	}
+	public static void say(Object obj){
+		System.out.println(obj);
+	}
+
+}

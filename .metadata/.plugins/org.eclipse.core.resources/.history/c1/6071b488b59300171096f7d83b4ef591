@@ -1,0 +1,83 @@
+package 地图编辑器;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern;
+import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+import jir.JirExcel;
+/**
+ * 
+ * @author zhanglianyu
+ * @since  使用获取Excel中的相同列的第一行和第二行的值
+ * 			第一行为服务器响应内容
+ *          第二行为前端上传内容
+ *          检测地图坐标参数coordinates
+ *          检查用例:检查未修改形状的商铺上传参数是否与下载数据相同
+ *        	如果上传内容和下载内容不相同，打印出上传不相同的内容
+ */
+public class 比对坐标 {
+
+	public static void main(String[] args) {
+		JirExcel jir = new JirExcel();
+		System.out.println(jir.Key[0]);
+		System.out.println(jir.Values[0]);
+		double [] Key = segmentation(jir.Key[0]);
+		double [] Values =segmentation(jir.Values[0]);
+		boolean[] KeyBoolean =new boolean[Key.length];
+		boolean[] ValuesBoolean =new boolean[Values.length];	
+		//检查上传和下载的数据是否相同，只检查values是否与key的值相同
+		if(Key.length != Values.length){
+			System.out.println("坐标长度不相等:key的长度:"+Key.length);
+			System.out.println("坐标长度不相等:Values的长度:"+Values.length);
+		}else{
+			System.out.println("key的长度:"+Key.length);
+			System.out.println("Values的长度:"+Values.length);
+		}
+		for(double s:Key){
+			System.out.println( s);
+		}
+		for(int i=0;i<Key.length;i++){			
+			for(int j=0;j<Values.length;j++){
+				if(ValuesBoolean[j]){continue;}				
+				if(Values[j]==(Key[i])){
+					ValuesBoolean[j] = true;
+					break;
+				}
+			}
+			KeyBoolean[i]=true;
+		}
+		//不相同的数据打印出来,
+	
+		for(int i=0;i<ValuesBoolean.length;i++){		
+			if(ValuesBoolean[i]==false){
+				System.out.println((i+1)+":存在不相同的数据:Values："+Values[i]);
+				System.out.println("-----------------------------------------");
+			}
+		}
+		System.out.println("检查完成");
+		
+	}
+	public static double [] segmentation(String s){
+		String [] a;
+		if(s.contains("POLYGON")==false){
+		s = s.replace("【", "[");//统一括号字符
+		s = s.replace("】", "]");//统一括号字符
+		s = s.replace("[","");
+		s = s.replace("],",",");
+		s = s.replace("]","");
+		s = s.replace(" ","");
+		}else{
+			s = s.replace("POLYGON", "").replace("((", "").replace("))", "").replace(" ", ",");		
+		}
+		a = s.split(",");//将每一个数值分割
+		double[] c= new double[a.length];
+		for(int i=0;i<a.length;i++){//转换为double值
+			if(a[i].equals("")){continue;}
+		   c[i] = Double.parseDouble(a[i]);	   
+		}
+		return c;	
+	}
+}

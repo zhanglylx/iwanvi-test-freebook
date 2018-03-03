@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;location/test&apos; to &apos;log_cdf&apos;" description="Rename resource &apos;test&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test" name="log_cdf" stamp="1505189151586" updateReferences="true"/>
+</session>

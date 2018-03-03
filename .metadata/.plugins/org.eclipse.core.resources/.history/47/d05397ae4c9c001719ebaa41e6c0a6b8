@@ -1,0 +1,177 @@
+package CoworkingSpaces;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import 招商平台.printErr;
+
+public class StartEruptSimultaneously {
+	/**
+	 * 代码为预定办公桌并发 get1 get1 = new get1();代表一个线程，需要多个线程时， 创建多个get类继承get2
+	 * 需要配置循环次数,执行次数,间隔时间,会议室总数,会议室时间默认为8:
+	 * 日期默认为系统日期如:20170918
+	 * 
+	 * @param args
+	 * @throws ParseException
+	 * @throws InterruptedException
+	 */
+	static int i = 0;
+	static int officeId = 1;
+	static int indexTimeDate = 0;
+
+	public static void main(String[] args) throws ParseException, InterruptedException {
+		List<String> errList = new LinkedList<String>();
+		List<String> correctList = new LinkedList<String>();
+		Map<String, Object> timeDateMap = new HashMap<>();
+		get1 get1 = new get1();
+		get2 get2 = new get2();
+		get3 get3 = new get3();
+		get4 get4 = new get4();
+		get5 get5 = new get5();
+		get6 get6 = new get6();
+		get7 get7 = new get7();
+		get8 get8 = new get8();
+		get9 get9 = new get9();
+		get10 get10 = new get10();
+		get10 get11 = new get10();
+		get10 get12 = new get10();
+		get10 get13 = new get10();
+		get10 get14 = new get10();
+		get10 get15 = new get10();
+		get10 get16 = new get10();
+		get10 get17 = new get10();
+		get10 get18 = new get10();
+		get10 get19 = new get10();
+		get10 get20 = new get10();
+		DateTime date = new DateTime(8, 30);
+
+		// 执行次数
+		int index = 200;
+		// 间隔时间 单位ms
+		int intervalTime = 0;
+		// 会议室总数
+		int meetingSum = 7;
+		// token
+		String token1 = "0ad9deaaa13020cf79b19a76b9100345";
+		String token2 = "0ad9deaaa13020cf79b19a76b9100345";
+		String token3 = "0ad9deaaa13020cf79b19a76b9100345";
+		String token4 = "0ad9deaaa13020cf79b19a76b9100345";
+	    int indexCirculation = 0;
+		while (true) {
+			if (indexCirculation == index) {
+				break;
+			}
+			check ch = new check(10);// 需要开始的线程数，必须配置
+			// 需要配置线程的id
+			StartEruptSimultaneously reserve = new StartEruptSimultaneously();
+			timeDateMap = reserve.timeDate(date.fromTimeDate(), date.toTimeDate());
+			String fromTimeDate = (String) timeDateMap.get("fromTimeDate");
+			String toTimeDate = (String) timeDateMap.get("toTimeDate");
+		    SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
+		    Long time=new Long(fromTimeDate+"000");  
+		    String d = format.format(time);  
+		    System.out.println("Format To String(Date):"+d);  	
+		    SimpleDateFormat format2 =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
+		    Long time2=new Long(toTimeDate+"000");  
+		    String d3 = format2.format(time2);  
+		    System.out.println(" To String(Date):"+d3);  	
+			System.out.println();
+			int officeId = StartEruptSimultaneously.officeId;
+			get1.run(1, officeId, fromTimeDate, toTimeDate, token1);
+			get2.run(2, officeId, fromTimeDate, toTimeDate, token2);
+			get3.run(3, officeId, fromTimeDate, toTimeDate, token3);
+			get4.run(4, officeId, fromTimeDate, toTimeDate, token4);
+			get5.run(5, officeId, fromTimeDate, toTimeDate, token4);
+			get6.run(6, officeId, fromTimeDate, toTimeDate, token4);
+			get7.run(7, officeId, fromTimeDate, toTimeDate, token4);
+			get8.run(8, officeId, fromTimeDate, toTimeDate, token4);
+			get9.run(9, officeId, fromTimeDate, toTimeDate, token4);
+			get10.run(10, officeId, fromTimeDate, toTimeDate, token4);
+			get11.run(11, officeId, fromTimeDate, toTimeDate, token4);
+			get12.run(12, officeId, fromTimeDate, toTimeDate, token4);
+			get13.run(13, officeId, fromTimeDate, toTimeDate, token4);
+			get14.run(14, officeId, fromTimeDate, toTimeDate, token4);
+			get15.run(15, officeId, fromTimeDate, toTimeDate, token4);
+			get16.run(16, officeId, fromTimeDate, toTimeDate, token4);
+			get17.run(17, officeId, fromTimeDate, toTimeDate, token4);
+			get18.run(18, officeId, fromTimeDate, toTimeDate, token4);
+			get19.run(19, officeId, fromTimeDate, toTimeDate, token4);
+			get20.run(20, officeId, fromTimeDate, toTimeDate, token4);
+			// 检查线程已经执行完毕	
+			while (true) {
+				int t=0;
+				Map<Thread,StackTraceElement[]> maps = Thread.getAllStackTraces();
+				for(Thread s : maps.keySet()){
+					if(s.toString().matches(".+,main]")){
+						t+=1;
+					}
+				}
+				if(t==1){
+					break;
+				}
+			}			
+			indexCirculation++;		
+			if (ch.checkCheck()) {
+				correctList.add("第" + indexCirculation + "次检查通过");
+			} else {
+				errList.add("第" + indexCirculation + "次检查不通过");
+			}
+			// 超过第meetingSum会议室停止
+			
+			System.out.println(indexCirculation);
+			System.out.println("==================================");
+			//会议室所有时间预定完成后更换会议室
+			if(toTimeDate.equals(date.toTimeDate()[date.toTimeDate().length-1])){
+				StartEruptSimultaneously.officeId++;
+				if (StartEruptSimultaneously.officeId == meetingSum +1) {
+					System.out.println(officeId);
+					System.out.println(meetingSum +1);
+					break;
+				}
+			}
+			
+			Thread.sleep(intervalTime);
+			
+		}
+		System.out.println("检查不通过list:");
+		new printErr(errList);
+		System.out.println("检查通过list:");
+		new printErr(correctList);
+		System.exit(0);
+	}
+
+	public Map<String, Object> timeDate(String[] fromTimeDate, String[] toTimeDate) {
+		Map<String, Object> timeDate = new HashMap<String, Object>();
+		String from;
+		String to;
+		if (StartEruptSimultaneously.indexTimeDate == 0) {
+			from = toTimeDate[StartEruptSimultaneously.indexTimeDate];
+			to = fromTimeDate[StartEruptSimultaneously.indexTimeDate + 1];
+		} else if (StartEruptSimultaneously.indexTimeDate == toTimeDate.length-1 && i==0) {
+			from = fromTimeDate[StartEruptSimultaneously.indexTimeDate];
+			to = toTimeDate[StartEruptSimultaneously.indexTimeDate];
+			StartEruptSimultaneously.indexTimeDate = -1;
+		} else {
+			if(i==0){
+			from = fromTimeDate[StartEruptSimultaneously.indexTimeDate];
+		    to = toTimeDate[StartEruptSimultaneously.indexTimeDate];	
+		    i=1;
+			}else{
+		    from = toTimeDate[StartEruptSimultaneously.indexTimeDate-1];
+		    to = fromTimeDate[StartEruptSimultaneously.indexTimeDate];
+		    i=0;
+		    StartEruptSimultaneously.indexTimeDate--;
+			}
+		}
+		StartEruptSimultaneously.indexTimeDate++;
+		timeDate.put("fromTimeDate", from);
+		timeDate.put("toTimeDate", to);
+		return timeDate;
+
+	}
+
+}

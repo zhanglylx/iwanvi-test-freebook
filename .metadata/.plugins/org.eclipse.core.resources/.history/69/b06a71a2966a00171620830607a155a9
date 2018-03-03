@@ -1,0 +1,21 @@
+package 万达;
+import 轻客户端.api;
+public class API1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		String url="https://api.ffan.com/ihos/beacon/v1/beaconsByUMM?callId=SYTM&coordinate=mercator&plazaId=1100079&re"
+				+ "qTime=1499909424&signValue=11464b596578906c00edd52d25843a3250300b60";
+		String response;
+		response=api.loadJSON(url);
+		System.out.println(response);
+		Excel cel = new Excel("minor");
+		String[] Excel = cel.Excel;
+		for(int i=0;i<Excel.length;i++){
+			System.out.println(i);
+		}
+		
+		System.out.println(Excel[3990]);
+	}
+
+}

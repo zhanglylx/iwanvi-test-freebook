@@ -1,0 +1,10 @@
+package 包装类;
+
+public class DemoInteger {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

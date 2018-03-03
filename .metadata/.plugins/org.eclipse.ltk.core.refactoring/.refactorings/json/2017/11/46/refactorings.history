@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ceshi.createExcek&apos; to &apos;createExcel&apos;&#x0D;&#x0A;- Original project: &apos;json&apos;&#x0D;&#x0A;- Original element: &apos;ceshi.createExcek&apos;&#x0D;&#x0A;- Renamed element: &apos;ceshi.createExcel&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;createExcek&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ceshi{createExcek.java[createExcek" matchStrategy="1" name="createExcel" qualified="false" references="true" similarDeclarations="false" stamp="1510907014211" textual="false" version="1.0"/>
+</session>

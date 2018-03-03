@@ -1,0 +1,14 @@
+package 万达;
+
+import java.util.Arrays;
+
+public class Ary {
+	String[] Ar = new String[0];
+	int []  Ays = new int[0];
+	public Ary(String[] Ar ){
+		 this.Ar = Arrays.copyOf(Ar, Ar.length+1);
+	}
+	public Ary(){
+		 this.Ays = Arrays.copyOf(Ays, Ays.length+1);
+	}
+}

@@ -1,0 +1,7 @@
+package jir;
+
+public class tihuanhuiche {
+	if(str.indexOf("\n")<=0){
+		
+	};
+}

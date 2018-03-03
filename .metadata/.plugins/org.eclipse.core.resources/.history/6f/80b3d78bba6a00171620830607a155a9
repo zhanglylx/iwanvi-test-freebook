@@ -1,0 +1,76 @@
+package 万达;
+import java.util.Arrays;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
+import 轻客户端.api;
+public class API1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		String url="https://api.ffan.com/ihos/beacon/v1/beaconsByUMM?callId=SYTM&coordinate=mercator&plazaId=1100079&re"
+				+ "qTime=1499909424&signValue=11464b596578906c00edd52d25843a3250300b60";
+		String response;
+		response=api.loadJSON(url);
+		System.out.println(response);
+		String find = "minor";
+		Excel cel = new Excel(find);
+		String[] Excel = cel.Excel;
+		int[] str = new int[1];
+		int [] err = new int[1];
+ 		int num = 0;
+		byte n=0;
+		for(int i=1;i<Excel.length;i++){//比对Excel信息是否存在接口中
+			if(response.contains(Excel[i])){
+			}else{								
+				if(num == 0 ){ //将错误信息添加进数组
+					str[num]= i;	
+					num++;
+					
+				}else{//给str数组扩容
+					str = Arrays.copyOf(str, str.length+1);
+					str[num]= i;
+					num++;
+				}
+			}
+		}
+		String[] a = new String[str.length];
+		int[][] values = new int[str.length][2];
+		for(int i=0;i<str.length;i++){
+			for(int j=0;j<str.length;j++){	
+				values=Arrays.copyOf(values, values.length+1);
+				values[i][0]=str[i];
+				if(Excel[str[i]].equals(Excel[str[j]])){
+					a[j]=Excel[str[j]];				
+					values[i][1]=values[i][1]+1;														
+				}
+			}
+			for(int k=0;k<a.length;k++){
+				if(a[k].equals(Excel[str[i]])){continue;}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		for(int i = 0;i<values.length;i++){
+			if(str[i]==0){continue;}
+			System.out.println(find + " 未找到，数据为: "+Excel[values[i][0]]+"共出现:"+values[i][1]);
+		}
+
+
+
+
+	}
+	public static int repetition(String[] a,String[] b){
+		
+		
+		
+		return 0;
+		
+	}
+}

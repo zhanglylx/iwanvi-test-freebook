@@ -1,0 +1,16 @@
+package 万达;
+
+import java.util.Arrays;
+public class Ary {
+	String[] str = new String[0];
+	int []   in = new int[0];
+	public String [] Ar(String[] list){
+		list = Arrays.copyOf(list, list.length);
+		return list;		
+	}
+	public int [] Ar(int[] in){
+		in = Arrays.copyOf(in, in.length);
+		return list;
+		
+	}
+}

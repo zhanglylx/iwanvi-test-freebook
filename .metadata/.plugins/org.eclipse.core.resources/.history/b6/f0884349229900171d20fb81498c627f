@@ -1,0 +1,13 @@
+package 共享办公;
+
+public class check {
+	boolean[] check = new boolean[20];
+	public check(int num,boolean check){
+		this.check[num] = check;
+	}
+	public void consequence(){
+		for(int i=0;i){
+			
+		}
+	}
+}

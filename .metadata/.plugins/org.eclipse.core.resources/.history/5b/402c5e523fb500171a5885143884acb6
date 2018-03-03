@@ -1,0 +1,16 @@
+package String;
+
+public class TestString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/**
+		 * 字符串对象是不可变的！
+		 * 对字符串的任何操作，都会重新创建对象,而不是影响以前对象
+		 */
+		String s1 = "Hello";
+		s1 +="world";
+		System.out.println(s1);
+	}
+
+}

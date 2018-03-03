@@ -1,0 +1,14 @@
+package 共享办公;
+
+public class 预定办公桌并发 {
+
+	public static void main(String[] args) {
+		long time = System.currentTimeMillis();
+		get2 get1 = new get1(time,1000);
+		get2 get2 = new get2(time,1000);
+		while(true){
+			
+		}
+	}
+
+}

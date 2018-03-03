@@ -1,0 +1,54 @@
+package Study;
+import java.util.Random;
+import java.util.Scanner;
+public class xuexi1 {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		int i=0;
+		int b=0;
+		Random rand = new Random();	//引入生成一个随机数
+		NO1:do{		
+		Integer randNum=new Integer(rand.nextInt(100000000));//将生成的随机数赋值
+	    System.out.println("请输入一个数字");
+	    String stringNum=randNum.toString();	//将随机数转换为String
+	    Scanner scan=new Scanner(System.in);	//创建扫描器
+	    String   str=scan.nextLine();	//接受扫描器的值
+	    
+		  do{   //输入的值不是整数，循环执行从新输入
+	    	if (strCheck(str)){	//使用方法检查输入的是否是整数
+	    		System.out.println("您输入的不正确，请输入整数");
+	    		System.out.println("请再次输入：");
+	            str=scan.nextLine();	//接受扫描器的值
+	            i=0;
+	            b++;
+	            if (b==10){
+	            	System.out.println("您输入错误超过10次，程序关闭");
+	            	break NO1; //如果从新输入超过10，程序停止
+	            }
+	            
+	    	}
+		  }while(i==0);
+	    	int stra=Integer.parseInt(str);//将扫描器的值转换为整数
+	    	if(stra<randNum){//判断输入的值与随机生成的是否相等
+	    		System.out.println("输入的值小了");
+	    	}else if(stra>randNum){
+	    		System.out.println("输入的值大了");
+	    	}else if(stra==randNum){
+	    		System.out.println("恭喜您，猜对了");
+	    	}	    			    	
+	    }while(i==0);	    	
+	}
+	public static boolean strCheck(String check){
+		char[] arr=check.toCharArray();
+		for(int i=0;i<arr.length;i++){
+			if(Character.isAlphabetic(arr[i])){  //检查是否有字母
+				return true;
+			}
+			if(Character.isIdentifierIgnorable(arr[i])){	//检查是否有特殊字符
+				return true;						
+			}
+		}
+		return false;
+	}
+}

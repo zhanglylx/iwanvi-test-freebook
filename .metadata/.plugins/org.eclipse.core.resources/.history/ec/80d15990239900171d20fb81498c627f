@@ -1,0 +1,21 @@
+package 共享办公;
+
+import java.text.ParseException;
+
+public class 预定办公桌并发 {
+
+	public static void main(String[] args) throws ParseException {
+		long time = System.currentTimeMillis();
+		get2 get1 = new get1(time,1000);
+		get2 get2 = new get2(time,1000);
+		DateTime date = new DateTime(8,30);
+		for(String s: date.toTimeDate()){
+			System.out.println(s);
+		}
+		while(true){
+			get1.run(date.toTimeDate()[0])
+			break;
+		}
+	}
+
+}

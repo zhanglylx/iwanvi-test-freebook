@@ -1,0 +1,12 @@
+package String;
+
+import javax.swing.JOptionPane;
+
+public class 将字符串转换成字符数组_不能使用tocharArray方法 {
+
+	public static void main(String[] args) {
+		String put=JOptionPane.showInputDialog(null,"请输入：\n","title",JOptionPane.PLAIN_MESSAGE); 
+		System.out.println(put);
+	}
+
+}

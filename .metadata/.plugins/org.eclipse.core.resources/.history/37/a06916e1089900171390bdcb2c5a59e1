@@ -1,0 +1,34 @@
+package 共享办公;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+public class DateTime {
+
+	public static void main(String[] args) throws ParseException{
+	   System.out.println(date("201709161252"));
+	   System.out.println(time("124530"));
+	   int hour=8;
+	   int minute = 30;
+	   while(true){
+		   date(time)
+	   }
+	   }   	    
+	    
+	
+	public static String time() throws ParseException{
+		Date dt = new Date();
+		SimpleDateFormat matter1 = new SimpleDateFormat("yyyyMM");
+		return matter1.format(dt);
+	}
+	
+	public static String  date(String time) throws ParseException{	 
+	    SimpleDateFormat format =  new SimpleDateFormat("yyyyMMddHHmm");  
+	    Date date = format.parse(time);  
+		    String timeSs = String.valueOf(date.getTime()); 
+		   if(timeSs.length()>3){
+			   timeSs = timeSs.substring(0, timeSs.length()-3);
+		   }
+		   return timeSs;
+	}
+
+}

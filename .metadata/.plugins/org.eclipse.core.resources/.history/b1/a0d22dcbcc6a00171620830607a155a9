@@ -1,0 +1,10 @@
+package 万达;
+import 轻客户端.api;
+public class xunjianAPI {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+     api.loadJSON(url);
+	}
+
+}

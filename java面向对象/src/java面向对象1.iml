@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java面向对象day02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/内部类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/多态_继承" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/定时器_继承抽象类javaAPITimer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/对象数组" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/封装_static_final关键字" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/封装_sub" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/总结" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/抽象类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/接口" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/构造器_重载_方法_空指针" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/访问控制_封装" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,9 @@
+package 万达;
+
+import java.util.Arrays;
+
+public class Ary {
+	public Ary(String[] list){
+		String [] Ary = Arrays.copyOf(Ary, Ary.length+1);
+	}
+}

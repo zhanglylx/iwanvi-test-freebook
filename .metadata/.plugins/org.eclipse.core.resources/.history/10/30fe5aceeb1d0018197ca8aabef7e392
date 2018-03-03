@@ -1,0 +1,10 @@
+package 序列化对象;
+
+public class SerializeObject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

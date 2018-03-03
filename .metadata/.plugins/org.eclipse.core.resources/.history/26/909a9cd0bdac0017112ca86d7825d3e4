@@ -1,0 +1,15 @@
+package com.worm;
+import javax.swing.JFranme;
+/**
+ * 显示窗口与绘图
+ * @author Administrator
+ *
+ */
+public class JFrameDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFranme frame = new JFranme("窗口");
+	}
+
+}

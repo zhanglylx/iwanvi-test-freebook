@@ -1,0 +1,33 @@
+package 内部类;
+import java.util.Timer;
+import java.util.TimerTask;
+/**
+ * 内部类，在类内部定义的类
+ * 内部类主要用于，封装一个
+ * @author Administrator
+ *
+ */
+public class 内部类 {
+	public static void main(String [] args){
+		Xoo xoo = new Xoo();
+		xoo.start();
+	}
+}
+class Xoo{
+	Timer timer = new Timer();
+	public void start(){
+		timer.schedule(new MyTask(), 0,1000);
+		timer.schedule(new StopTask(), 1000*10);
+	}
+	private class StopTask extends TimerTask{
+		public void run(){
+			timer.cancel();//取消timer
+		}
+	}
+	private class MyTask extends TimerTask{
+		int i=10;
+		public void run(){
+		System.out.println(i--);	
+		}
+	}
+}

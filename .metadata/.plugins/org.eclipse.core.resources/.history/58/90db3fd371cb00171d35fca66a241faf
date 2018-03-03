@@ -1,0 +1,50 @@
+package ceshi;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFComment;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import javafx.scene.control.Cell;
+import jxl.Sheet;
+
+public class getExcel {
+	String[] Values;
+	public static void getExcel () throws IOException{
+		InputStream is = new FileInputStream("F:\\新建文件夹 (2)\\新建文件夹\\六期室内星(1).xlsx");
+        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(is);            
+        XSSFSheet xssfSheet = xssfWorkbook.getSheetAt(0);
+          int lie=xssfSheet.getRow(0).getPhysicalNumberOfCells();//获取所有的列
+          int row = xssfSheet.getLastRowNum(); //获取所有的行
+           for (int rowNum = 0; rowNum <=lie ; rowNum++) {
+                XSSFRow xssfRow = xssfSheet.getRow(rowNum);
+                if (xssfRow != null) {
+                   XSSFCell one = xssfRow.getCell(0);
+                   one.setCellType(org.apache.poi.ss.usermodel.Cell.CELL_TYPE_STRING);
+                    System.out.println("==");
+                    System.out.println(one);
+
+               }
+           // }
+        }
+        /*
+        //转换数据格式
+       String getValue(XSSFCell xssfRow) {
+
+        if (xssfRow.getCellType() == xssfRow.CELL_TYPE_BOOLEAN) {
+            return String.valueOf(xssfRow.getBooleanCellValue());
+        } else if (xssfRow.getCellType() == xssfRow.CELL_TYPE_NUMERIC) {
+            return String.valueOf(xssfRow.getNumericCellValue());
+        } else {
+            return String.valueOf(xssfRow.getStringCellValue());
+        }
+    }
+    */
+	}
+}

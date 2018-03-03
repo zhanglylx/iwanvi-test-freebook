@@ -1,0 +1,8 @@
+package 万达;
+
+import java.util.Arrays;
+public class Ary {
+	public String [] Ary(String[] list){
+		
+	}
+}

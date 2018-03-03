@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Study/Scanner/Scanner.iml" filepath="$PROJECT_DIR$/Study/Scanner/Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scanner/Scanner1.iml" filepath="$PROJECT_DIR$/Scanner/Scanner1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/String/String.iml" filepath="$PROJECT_DIR$/Study/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String1.iml" filepath="$PROJECT_DIR$/String/String1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/Study.iml" filepath="$PROJECT_DIR$/Study/Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XUEXI/XUEXI.iml" filepath="$PROJECT_DIR$/XUEXI/XUEXI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/XUEXI/XUEXI1.iml" filepath="$PROJECT_DIR$/Study/XUEXI/XUEXI1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adb/adb.iml" filepath="$PROJECT_DIR$/adb/adb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jAVA学习/src/jAVA学习.iml" filepath="$PROJECT_DIR$/jAVA学习/src/jAVA学习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSE/src/javaSE.iml" filepath="$PROJECT_DIR$/javaSE/src/javaSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSE/javaSE1.iml" filepath="$PROJECT_DIR$/javaSE/javaSE1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSE2/src/javaSE2.iml" filepath="$PROJECT_DIR$/javaSE2/src/javaSE2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSE2/javaSE21.iml" filepath="$PROJECT_DIR$/javaSE2/javaSE21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/java基础/java基础.iml" filepath="$PROJECT_DIR$/Study/java基础/java基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java基础/java基础1.iml" filepath="$PROJECT_DIR$/java基础/java基础1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java基础/src/java基础2.iml" filepath="$PROJECT_DIR$/java基础/src/java基础2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/java基础/src/java基础3.iml" filepath="$PROJECT_DIR$/Study/java基础/src/java基础3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java面向对象/java面向对象.iml" filepath="$PROJECT_DIR$/java面向对象/java面向对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java面向对象/src/java面向对象1.iml" filepath="$PROJECT_DIR$/java面向对象/src/java面向对象1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/java面向对象/src/java面向对象2.iml" filepath="$PROJECT_DIR$/Study/java面向对象/src/java面向对象2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/json/src/json.iml" filepath="$PROJECT_DIR$/Study/json/src/json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/json/json1.iml" filepath="$PROJECT_DIR$/Study/json/json1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json/json2.iml" filepath="$PROJECT_DIR$/json/json2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json/src/json3.iml" filepath="$PROJECT_DIR$/json/src/json3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Study/study/study.iml" filepath="$PROJECT_DIR$/Study/study/study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xuexi2/xuexi2.iml" filepath="$PROJECT_DIR$/xuexi2/xuexi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/万达/src/万达.iml" filepath="$PROJECT_DIR$/万达/src/万达.iml" />
+      <module fileurl="file://$PROJECT_DIR$/脚本/src/脚本.iml" filepath="$PROJECT_DIR$/脚本/src/脚本.iml" />
+      <module fileurl="file://$PROJECT_DIR$/黑马/黑马.iml" filepath="$PROJECT_DIR$/黑马/黑马.iml" />
+    </modules>
+  </component>
+</project>
