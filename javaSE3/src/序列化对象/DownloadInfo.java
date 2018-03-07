@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @author Administrator
  *
  */
-public class DownloadInfo implements Serializable {
+public class DownloadInfo  implements Serializable {
 	/**
 	 * 版本号。用于匹配当前类与其被反序列化的对象是否处于同样的特征(属性列表一致等)。
 	 * 反序列化时，ObjectInputStream会根据被反序列化对象的版本

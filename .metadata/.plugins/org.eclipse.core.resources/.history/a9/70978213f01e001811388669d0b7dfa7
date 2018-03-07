@@ -1,0 +1,14 @@
+package 多线程;
+/**
+ * 使用匿名类方式创建线程
+ * @author Administrator
+ *
+ */
+public class TestInnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

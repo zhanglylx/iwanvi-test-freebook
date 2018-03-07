@@ -1,0 +1,10 @@
+package 多线程;
+
+public class TestInnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
