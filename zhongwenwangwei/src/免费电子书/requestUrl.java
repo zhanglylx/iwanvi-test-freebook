@@ -31,4 +31,5 @@ public class requestUrl {
 		JOptionPane.showMessageDialog(null, err, "发现运行错误，程序即将关闭",JOptionPane.ERROR_MESSAGE); 
 		list.printlnList();
 	}
+	public static String 
 }

@@ -60,7 +60,6 @@ public class StartGifBrewery {
 					JOptionPane.CANCEL_OPTION, null, options, options[1]);
 			System.out.println(m);
 			if (m == 1) {
-				keyPressWithCtrl(robot, KeyEvent.VK_C);
 				Thread.sleep(500);
 			} else {
 				keyPressWithCtrl(robot, KeyEvent.VK_C);

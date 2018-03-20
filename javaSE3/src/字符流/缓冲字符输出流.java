@@ -40,7 +40,7 @@ public class 缓冲字符输出流 {
 	public static void selectedFile(){
 		Runtime runtime = Runtime.getRuntime();
 		try {
-			runtime.exec("cmd /c explorer " + System.getProperty("user.dir"));
+			runtime.exec("cmd /c explorer  " + System.getProperty("user.dir"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.bouncycastle.util.Arrays"/>
 <fullyQualifiedTypeName name="appium方法.adbPuthCheck"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 </qualifiedTypeNameHistroy>

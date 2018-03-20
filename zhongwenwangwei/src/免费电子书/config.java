@@ -9,15 +9,15 @@ public class config {
 	//上传曝光URL
 	final static String superior = "http://test.cread.com:8088/pvuvreport";
 	//循环次数限制
-	final static int executeCount =300000;
+	final static int executeCount =100000000;
 	//版本
 	final static String VERSION = "4.0.1";
 	//渠道
-	final static String CNID = "1063";
+	final static String CNID = "1062";
 	//访问人数
 	final static int userNumber = 1000;
 	//广告位
-	final static int GGNumber = 65;
+	final static int GGNumber = 68;
 	//服务器单日广告曝光总量
 	final static int dayGGbgzl = 30;
 	//单日用户广告曝光总量
